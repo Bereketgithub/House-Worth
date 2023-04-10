@@ -3,7 +3,6 @@
     text-align: center;
     margin: 0 auto;
     width: 100vw;
-    margin-bottom: 10vh;
     padding: 5vh;
     position: relative;
     color: black;
@@ -11,11 +10,10 @@
     background-color: #E5E4E2;
     background-color: white;
 
-    z-index: -4;
-
   }
 .house-listing h1{
-  text-align: right;
+  text-align: center;
+  padding-left: 100px;
   box-sizing: border-box;
   color: black;
   padding: 0 20px;
@@ -29,23 +27,23 @@
     row-gap: 10px;
     justify-items:start;
     justify-content: center;
-    /* border: 3px solid green; */
+    max-height: fit-content;
   }
 
   .house {
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 10px;
     max-width: 350px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
   }
 .housing-grid-backdrop{
     position: absolute;
-    height: 90%;
+    height: 80%;
     max-width: 500px;
     width: 500px;
     top: 5%;
-    z-index: -3;
+    z-index: 2;
     background-color: black;
   }
   .house-grid .house:nth-child(1){
@@ -60,6 +58,9 @@
     flex-direction: column;
     justify-content: space-around;
     border-radius: 0;
+    z-index: 3;
+    height: 100%;
+    max-height: 80%;
   
   }
   .house-grid .house:nth-child(4){
@@ -71,6 +72,9 @@
     justify-items: start;
     border-radius: 0;
     position: relative;
+  }
+  .house:nth-child(1) .book-now-button{
+    color: white;
   }
 
   .house-desc-cont{
@@ -99,6 +103,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 0;
   }
   .house:nth-child(1) img {
     height: 50%;
@@ -110,26 +115,35 @@
   }
   
   .book-now-button {
-    padding: 0 20px;
+    box-sizing: border-box;
+    padding: 10px 20px;
     background: none;
-    color: #fff;
+    color: black;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     position: relative;
+    transition: all .3s ease;
   }
   .book-now-button::after{
     content: '';
     position: absolute;
     height: 5px;
-    width: 30%;
+    width: 50%;
     background-color: rgb(255, 115, 0);
     bottom: -5px;
-    right: -5px;
+    left: 0%;
+    transition: all .5s ease;
+
   }
   
   .book-now-button:hover {
-    background-color: #0069d9;
+    /* background-color: rgb(255, 115, 0); */
+    /* color: whitesmoke; */
+    transform: scale(1.02);
   }
-  
+  .book-now-button:hover::after{
+    width: 100%;
+
+  }
