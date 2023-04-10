@@ -62,38 +62,16 @@ box-sizing: border-box;
     background-color: white;
     border-radius: 5px;
 }
-
-.filter{
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  right: 30%;
-  width: 40%;
-  padding: 20px 50px;
-  border-radius: 10px;
+.searchBar{
+    position: absolute;
+    top: 50%;
+    left: 30% ;
+    width: 40%;
 }
-
-.filterButtons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .filterButtons button {
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .filterButtons button:hover,
-  .filterButtons button.active {
-    background-color: #ccc;
-    color: #fff;
-    border-color: #ccc;
-  }
-  
-  
+.searchBar input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+}

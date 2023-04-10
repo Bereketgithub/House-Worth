@@ -10,7 +10,6 @@ import ListingPage from "./components/ListingPage";
 import { Hero } from "./componentss/Hero";
 import { Explore } from "./componentss/Explore";
 import HouseListing from "./componentss/HouseListing";
-import DropdownMenu from "./componentss/DropdownMenu";
 
 function App() {
   const [{ listing_result }, dispatch] = useStateValue();
@@ -33,7 +32,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/test" element={<DropdownMenu />} />
+            <Route path="/test" element={<HouseListing />} />
             <Route path="/listing/:id" element={<ListingPage />} />
           </Routes>
         </div>

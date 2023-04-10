@@ -1,9 +1,7 @@
 import { useState } from "react"
 import classes from  "./Hero.module.css"
-import DropdownMenu from "./DropdownMenu"
 export const Hero = () => {
     const [search, setSearch] = useState(false)
-    const [activeFilter, setActiveFilter] = useState('')
     const showSearch = () => {
         setSearch(!search)
     }
@@ -14,13 +12,13 @@ export const Hero = () => {
             <span>HouseWorth</span>
             <ul>
                 <li href= "#explore">Explore</li>
-                <li onClick={showSearch}>Show</li>
+                <li onClick={showSearch}>Search </li>
                 <li>Sign In as agent</li>
             </ul>
         </div>
-        {search && <div className={classes.filter}>
-          <DropdownMenu />
-        </div>}
+        <div className={`${classes.searchBar} ${classes.appear}`}>
+            { search && <input  placeholder="Search ....."></input>}
+        </div>
     </div>
   )
 }
