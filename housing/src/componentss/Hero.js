@@ -1,5 +1,6 @@
 import { useState } from "react"
 import classes from  "./Hero.module.css"
+import DropdownMenu from "./DropdownMenu"
 export const Hero = () => {
     const [search, setSearch] = useState(false)
     const showSearch = () => {
@@ -17,7 +18,7 @@ export const Hero = () => {
             </ul>
         </div>
         <div className={`${classes.searchBar} ${classes.appear}`}>
-            { search && <input  placeholder="Search ....."></input>}
+            { search && <DropdownMenu/>} 
         </div>
     </div>
   )
