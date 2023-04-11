@@ -1,31 +1,30 @@
 /* Style for the dropdown menu container */
 .dropdown-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  /* Style for the dropdown menu labels */
-  .dropdown-menu label {
-    margin-right: 1rem;
-  }
-  
-  /* Style for the dropdown menus */
-  .dropdown-menu select {
-    padding: 0.5rem;
-    margin-right: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    color: #555;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Style for the dropdown menu options */
-  .dropdown-menu option {
-    font-size: 1rem;
-    color: #555;
-    background-color: #fff;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Style for the dropdown menu labels */
+.dropdown-menu label {
+  margin-right: 1rem;
+}
+
+/* Style for the dropdown menus */
+.dropdown-menu select {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Style for the dropdown menu options */
+.dropdown-menu option {
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+}
