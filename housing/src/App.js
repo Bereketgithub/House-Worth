@@ -10,6 +10,7 @@ import ListingPage from "./components/ListingPage";
 import { Hero } from "./componentss/Hero";
 import { Explore } from "./componentss/Explore";
 import HouseListing from "./componentss/HouseListing";
+import DropdownMenu from "./componentss/DropdownMenu";
 
 function App() {
   const [{ listing_result }, dispatch] = useStateValue();
@@ -28,6 +29,7 @@ function App() {
                 <>
                   <Hero />
                   <HouseListing />
+                  <DropdownMenu />
                   <Explore />
                 </>
               }
