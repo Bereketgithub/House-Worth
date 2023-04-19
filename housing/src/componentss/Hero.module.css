@@ -63,37 +63,9 @@ box-sizing: border-box;
     border-radius: 5px;
 }
 
-.filter{
-  background-color: white;
+.DropdownMenu{
   position: absolute;
-  top: 50%;
-  right: 30%;
+  top: 40%;
   width: 40%;
-  padding: 20px 50px;
-  border-radius: 10px;
+  left: 30%;
 }
-
-.filterButtons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .filterButtons button {
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .filterButtons button:hover,
-  .filterButtons button.active {
-    background-color: #ccc;
-    color: #fff;
-    border-color: #ccc;
-  }
-  
-  

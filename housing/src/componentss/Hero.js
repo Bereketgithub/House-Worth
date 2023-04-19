@@ -18,15 +18,9 @@ export const Hero = () => {
                 <li>Sign In as agent</li>
             </ul>
         </div>
-<<<<<<< HEAD
-        <div className={`${classes.searchBar} ${classes.appear}`}>
+        <div className={classes.DropdownMenu}>
             { search && <DropdownMenu/>} 
         </div>
-=======
-        {search && <div className={classes.filter}>
-          <DropdownMenu />
-        </div>}
->>>>>>> 78287f51998f08034e4489c7459a805a9911f8ad
     </div>
   )
 }

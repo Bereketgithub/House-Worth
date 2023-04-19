@@ -16,15 +16,15 @@ const years = [
   { label: '2025', value: '2025' },
 ];
 const sorts= [
-    { label: 'price', value: '0 usd' },
-    { label: 'distance', value: '1111 KM' },
-    { label: 'Bedrooms', value: '2 beds' },
+    { label: 'price', value: 'price' },
+    { label: 'distance', value: 'distance' },
+    { label: 'Bedrooms', value: 'Bedrooms' },
   ];
 
 const DropdownMenu = () => {
   const [selectedSeason, setSelectedSeason] = useState(Terms[0].value);
   const [selectedYear, setSelectedYear] = useState(years[0].value);
-  const [selectedsorts,setSelectedsorts]=useState(sorts[0].value);
+  const [selectedSort, setSelectedSort]=useState(sorts[0].value);
 
   const handleSeasonChange = (event) => {
     setSelectedSeason(event.target.value);
@@ -34,7 +34,7 @@ const DropdownMenu = () => {
     setSelectedYear(event.target.value);
   };
   const handlesortsChange=(event)=>{
-    setSelectedsorts(event.target.value)
+    setSelectedSort(event.target.value)
   }
 
   return (
@@ -56,14 +56,15 @@ const DropdownMenu = () => {
           </option>
         ))}
       </select>
-      <label htmlFor="sorts">Sorts:</label>
-      <select id="sorts" value={selectedsorts} onChange={handlesortsChange}>
-        {years.map((sorts) => (
-          <option key={sorts.value} value={sorts.value}>
-            {sorts.label}
+      <label htmlFor="Sorts">Sort By:</label>
+      <select id="sorts" value={selectedSort} onChange={handleYearChange}>
+        {sorts.map((sort) => (
+          <option key={sort.value} value={sort.value}>
+            {sort.label}
           </option>
         ))}
       </select>
+     
     </div>
   );
 };
